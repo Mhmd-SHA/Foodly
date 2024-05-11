@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:foodly/constants/constants.dart';
 import 'package:foodly/view/entry_point.dart';
+import 'package:get/get.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 Widget defaultHome = MainScreen();
@@ -24,8 +25,12 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Foodly',
+          defaultTransition: Transition.rightToLeftWithFade,
           theme: ThemeData(
-            appBarTheme: AppBarTheme(color: Colors.grey),
+            appBarTheme: AppBarTheme(
+              centerTitle: true,
+              color: Colors.grey,
+            ),
             scaffoldBackgroundColor: kOffWhite,
             iconTheme: IconThemeData(color: kDark),
             primarySwatch: Colors.grey,

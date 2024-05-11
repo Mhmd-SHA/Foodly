@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:foodly/common/app_style.dart';
+import 'package:foodly/common/reusable_text.dart';
 import 'package:foodly/constants/constants.dart';
 
-import '../../common/app_style.dart';
-import '../../common/reusable_text.dart';
-
-class RecommendationPage extends StatelessWidget {
-  const RecommendationPage({Key? key}) : super(key: key);
+class AllFastestFoodPage extends StatelessWidget {
+  const AllFastestFoodPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +13,7 @@ class RecommendationPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0.3,
         title: ReusableText(
-          text: "Recommendations",
+          text: "Fastest Foods",
           style: appStyle(13.sp, kGray, FontWeight.w600),
         ),
         centerTitle: true,

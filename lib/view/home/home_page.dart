@@ -4,14 +4,14 @@ import 'package:foodly/common/custom_appbar.dart';
 import 'package:foodly/common/custom_container.dart';
 import 'package:foodly/common/heading.dart';
 import 'package:foodly/constants/constants.dart';
-import 'package:foodly/view/home/recommendation_page.dart';
+import 'package:foodly/view/home/allrecommendation_page.dart';
 import 'package:foodly/view/home/widgets/category_list.dart';
 import 'package:foodly/view/home/widgets/food_list.dart';
 import 'package:foodly/view/home/widgets/nearby_reastaurants_list.dart';
 import 'package:get/get.dart';
 
 import 'allnearby_restaurants_page.dart';
-import 'fastest_food_page.dart';
+import 'allfastest_food_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
             Heading(
               headingText: "Try Something New",
               onTap: () {
-                Get.to(() => RecommendationPage(),
+                Get.to(() => AllRecommendationPage(),
                     transition: Transition.rightToLeftWithFade,
                     duration: Durations.medium1);
               },
@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
             Heading(
               headingText: "Fastest Food Close to You",
               onTap: () {
-                Get.to(() => FastestFoodPage(),
+                Get.to(() => AllFastestFoodPage(),
                     transition: Transition.rightToLeftWithFade,
                     duration: Durations.medium1);
               },

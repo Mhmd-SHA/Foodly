@@ -25,7 +25,7 @@ class AllCategories extends StatelessWidget {
         centerTitle: true,
       ),
       body: BackgroundContainer(
-        color: Colors.white,
+        color: kOffWhite,
         child: Container(
           padding: EdgeInsets.only(left: 12.w, top: 10.h),
           height: height,

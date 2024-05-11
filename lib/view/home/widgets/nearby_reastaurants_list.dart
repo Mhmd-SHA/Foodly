@@ -79,7 +79,8 @@ class NearbyReastaurantsList extends StatelessWidget {
                         RatingBarIndicator(
                           unratedColor: kPrimary,
                           itemSize: 10.sp,
-                          itemCount: int.parse(restaurant["rating"].toString()),
+                          itemCount: int.parse(restaurant["rating"].toString())
+                              .round(),
                           itemBuilder: (BuildContext context, int index) {
                             return Icon(FontAwesome.star);
                           },
